@@ -1,12 +1,28 @@
 export const metadata = {
-  title: 'HomeFit Solutions',
-  description: 'Turnkey home fitout packages with instant quotation',
+  title: "HomeFit Solutions",
+  description: "Turnkey home fitout packages with instant quotation",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body style={{margin:0}}>{children}</body>
+      <head>
+        {/* Use the same fonts your HomeFit UI expects */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Lato:wght@400;700&display=swap"
+          rel="stylesheet"
+                 html,body{ height:100%; }
+          body{
+            margin:0;
+            background:#fff; /* keep site background white */
+            color:#0B1F3A;   /* CL.navy */
+            font-family:'Lato','Helvetica Neue',sans-serif;
+          }
+          /* Optional: make <a> inherit color and remove underlines by default */
+          a{ color:inherit; text-decoration:none; }
+        `}</style>
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
