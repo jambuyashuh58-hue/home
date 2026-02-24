@@ -1,6 +1,8 @@
 "use client";
 
-import { BookOpen } from "lucide-react";
+import App from "../components/homefit-final.jsx";
+
+export default function Page() {return <App />;}
 
 const CL = { navy: "#0B1F3A", blue: "#1E88E5", gray: "#F3F5F7" };
 
